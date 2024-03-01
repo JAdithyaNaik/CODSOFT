@@ -1,6 +1,10 @@
+#Author : Jatoth Adithya Naik
+#for    : Intenship (TASK-1)
+
 
 tasks = []
 
+# main function
 def main():
     print("\n***TO DO LIST APP***")
     while True :
@@ -29,7 +33,7 @@ def main():
         else:
             print("Enter valid input , please try again..\n")
 
-
+# defining the functions i have called
 def add(new_item):
     tasks.append(new_item)
     print("Added Task Successfully!!\n")
@@ -42,9 +46,10 @@ def show():
         for i in range(len(tasks)):
             print(f"{i+1}."+tasks[i])
         print("Shown your Tasks Succesfully!!\n")
+        
 def delete(ind):
         tasks.pop(ind-1)
         print("Removed Task Successfully!!\n")
-
+# main(recursion)
 if __name__ == "__main__":
     main()
