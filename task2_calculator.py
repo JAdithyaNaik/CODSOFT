@@ -109,8 +109,4 @@ def power(n,m):
 
 # main(recursion)--used to repeated n no.of times
 if __name__ == "__main__":
-#     while True:
-#         if(choice  == 8):
-#             break
-#         else:
-            main()
+        main()
