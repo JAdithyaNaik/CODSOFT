@@ -20,7 +20,7 @@ def main():
         print("3.VIEW")
         print("4.EXIT")
         choice=int(input("Enter your choice : "))
-    
+        print("\n")
         if(choice == 1):
             item = input("Enter the task that you wanna add : ")
             add(item)
@@ -38,6 +38,7 @@ def main():
             show()
         elif(choice == 4):
             print("Saving & Exiting ......\n")
+            break;
         else:
             print("Enter valid input , please try again..\n")
 
