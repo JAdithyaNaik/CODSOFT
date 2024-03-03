@@ -14,6 +14,8 @@ def main():
     print("________________________________________")
     print("\n\t\t\t***CALCULATOR APP***\n")
     while True :
+        a = int(input("\nEnter the first Number : "))
+        b = int(input("Enter the Second Number : "))
         print("1.ADDITION")
         print("2.SUBTRACTION")
         print("3.MULTIPLICATION")
@@ -22,9 +24,7 @@ def main():
         print("6.FLLOR DIVISION")
         print("7.POWER")
         print("8.EXIT")
-        a = int(input("\nEnter the first Operand :"))
-        b = int(input("\nEnter the Second Operand :"))
-        choice =int(input("Enter your Choice:"))
+        choice =int(input("\nEnter your Choice : "))
 
         if(choice == 1):
             add(a,b)
@@ -41,7 +41,7 @@ def main():
         elif(choice == 7):
             power(a,b)
         elif(choice == 8):
-            print("\nExiting\n")
+            print("\nExiting from Calculator......\n")
             break;
         else:
             print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
@@ -51,41 +51,48 @@ def main():
 # add() method
 def add(n,m):
     result = n+m
-    print(f"Addition of {n} and {m} is : {result}")
+    print(f"\nAddition of {n} and {m} is : {result}")
+    print("________________________________________")
 
  # sub() method   
 def sub(n,m):
     result = n-m
-    print(f"Subtraction of {n} and {m} is : {result}")
+    print(f"\nSubtraction of {n} and {m} is : {result}")
+    print("________________________________________")
 
 # mul() method
 def mul(n,m):
     result = n*m
-    print(f"Multiplication of {n} and {m} is : {result}")
+    print(f"\nMultiplication of {n} and {m} is : {result}")
+    print("________________________________________")
 
 # div() method
 def div(n,m):
     result = n/m
-    print(f"Division of {n} and {m} is : {result}")
+    print(f"\nDivision of {n} and {m} is : {result}")
+    print("________________________________________")
 
 # mod() method
 def mod(n,m):
     result = n%m
-    print(f"Modulus of {n} and {m} is : {result}")
-
+    print(f"\nModulus of {n} and {m} is : {result}")
+    print("________________________________________")
+    
 # flr() method
 def flr(n,m):
     result = n//m
-    print(f"Floor Division of {n} and {m} is : {result}")
-    
+    print(f"\nFloor Division of {n} and {m} is : {result}")
+    print("________________________________________")
+
 # power() method
 def power(n,m):
     result = n**m
-    print(f"{n} to the Power of {m} is : {result}")
-    
+    print(f"\n{n} to the Power of {m} is : {result}")
+    print("________________________________________")
 
 
-    
+
+
 # main(recursion)--used to repeated n no.of times
 if __name__ == "__main__":
     main()
