@@ -6,7 +6,7 @@
 # Discription :
 # this command appplication is for performing the arthmetic operations
 # you can perform any arthematic operation(add,subtract,multiply,divide,remainder,floor division,power)
-
+# handled exceptions
 result =0
 
 def main():
@@ -82,14 +82,20 @@ def div(n,m):
 
 # mod() method
 def mod(n,m):
-    result = n%m
-    print(f"\nModulus of {n} and {m} is : {result}")
+    if(m == 0):
+        print("\nCan't Divide by 'Zero'")
+    else:
+        result = n%m
+        print(f"\nModulus of {n} and {m} is : {result}")
     print("________________________________________")
     
 # flr() method
 def flr(n,m):
-    result = n//m
-    print(f"\nFloor Division of {n} and {m} is : {result}")
+    if(m == 0):
+        print("\nCan't Divide by 'Zero'")
+    else:
+        result = n//m
+        print(f"\nFloor Division of {n} and {m} is : {result}")
     print("________________________________________")
 
 # power() method
