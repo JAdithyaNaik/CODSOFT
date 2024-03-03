@@ -2,7 +2,10 @@
 
 #Author : Jatoth Adithya Naik
 #for    : Intenship (TASK-1)
-# .
+
+# Discription :
+# this command appplication is for tracking your tasks
+# you can add,delete and view your tasks by choosing respective choices
 
 tasks = []
 
