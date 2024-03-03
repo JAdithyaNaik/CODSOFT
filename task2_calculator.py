@@ -20,12 +20,72 @@ def main():
         print("4.DIVISION")
         print("5.MODULUS")
         print("6.FLLOR DIVISION")
-        print("5.POWER")
+        print("7.POWER")
+        print("8.EXIT")
         a = int(input("\nEnter the first Operand :"))
         b = int(input("\nEnter the Second Operand :"))
-        choice = print("Enter your Choice:")
+        choice =int(input("Enter your Choice:"))
 
-        if():
+        if(choice == 1):
+            add(a,b)
+        elif(choice == 2):
+            sub(a,b)
+        elif(choice == 3):
+            mul(a,b)
+        elif(choice == 4):
+            div(a,b)
+        elif(choice == 5):
+            mod(a,b)
+        elif(choice == 6):
+            flr(a,b)
+        elif(choice == 7):
+            power(a,b)
+        elif(choice == 8):
+            print("\nExiting\n")
+            break;
+        else:
+            print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
+
+
+# defining the functions i have called
+# add() method
+def add(n,m):
+    result = n+m
+    print(f"Addition of {n} and {m} is : {result}")
+
+ # sub() method   
+def sub(n,m):
+    result = n-m
+    print(f"Subtraction of {n} and {m} is : {result}")
+
+# mul() method
+def mul(n,m):
+    result = n*m
+    print(f"Multiplication of {n} and {m} is : {result}")
+
+# div() method
+def div(n,m):
+    result = n/m
+    print(f"Division of {n} and {m} is : {result}")
+
+# mod() method
+def mod(n,m):
+    result = n%m
+    print(f"Modulus of {n} and {m} is : {result}")
+
+# flr() method
+def flr(n,m):
+    result = n//m
+    print(f"Floor Division of {n} and {m} is : {result}")
+    
+# power() method
+def power(n,m):
+    result = n**m
+    print(f"{n} to the Power of {m} is : {result}")
+    
+
+
+    
 # main(recursion)--used to repeated n no.of times
 if __name__ == "__main__":
     main()
