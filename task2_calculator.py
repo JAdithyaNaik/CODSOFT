@@ -25,6 +25,8 @@ def main():
             choice =int(input("\nEnter your Choice : "))
             if(choice == 8):
                 break
+            elif(choice>8):
+                print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
             else:
                 a = int(input("\nEnter the first Number : "))
                 b = int(input("Enter the Second Number : "))
