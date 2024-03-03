@@ -10,41 +10,44 @@
 result =0
 
 def main():
-    print("\n\n\t\t\tby @JATOTH ADITHYA NAIK")
-    print("________________________________________")
-    print("\n\t\t\t***CALCULATOR APP***\n")
-    while True :
-        a = int(input("\nEnter the first Number : "))
-        b = int(input("Enter the Second Number : "))
-        print("1.ADDITION")
-        print("2.SUBTRACTION")
-        print("3.MULTIPLICATION")
-        print("4.DIVISION")
-        print("5.MODULUS")
-        print("6.FLLOR DIVISION")
-        print("7.POWER")
-        print("8.EXIT")
-        choice =int(input("\nEnter your Choice : "))
+        print("\n\n\t\t\tby @JATOTH ADITHYA NAIK")
+        print("________________________________________")
+        print("\n\t\t\t***CALCULATOR APP***\n")
+        while True :
+            print("1.ADDITION")
+            print("2.SUBTRACTION")
+            print("3.MULTIPLICATION")
+            print("4.DIVISION")
+            print("5.MODULUS")
+            print("6.FLLOR DIVISION")
+            print("7.POWER")
+            print("8.EXIT")
+            choice =int(input("\nEnter your Choice : "))
+            if(choice == 8):
+                break
+            else:
+                a = int(input("\nEnter the first Number : "))
+                b = int(input("Enter the Second Number : "))
 
-        if(choice == 1):
-            add(a,b)
-        elif(choice == 2):
-            sub(a,b)
-        elif(choice == 3):
-            mul(a,b)
-        elif(choice == 4):
-            div(a,b)
-        elif(choice == 5):
-            mod(a,b)
-        elif(choice == 6):
-            flr(a,b)
-        elif(choice == 7):
-            power(a,b)
-        elif(choice == 8):
-            print("\nExiting from Calculator......\n")
-            break;
-        else:
-            print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
+                if(choice == 1):
+                    add(a,b)
+                elif(choice == 2):
+                    sub(a,b)
+                elif(choice == 3):
+                    mul(a,b)
+                elif(choice == 4):
+                    div(a,b)
+                elif(choice == 5):
+                    mod(a,b)
+                elif(choice == 6):
+                    flr(a,b)
+                elif(choice == 7):
+                    power(a,b)
+                elif(choice == 8):
+                    print("\nExiting from Calculator......\n")
+                    break;
+                else:
+                    print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
 
 
 # defining the functions i have called
@@ -68,8 +71,11 @@ def mul(n,m):
 
 # div() method
 def div(n,m):
-    result = n/m
-    print(f"\nDivision of {n} and {m} is : {result}")
+    if(m == 0):
+        print("\nCan't Divide by 'Zero'")
+    else:
+        result = n/m
+        print(f"\nDivision of {n} and {m} is : {result}")
     print("________________________________________")
 
 # mod() method
@@ -95,4 +101,8 @@ def power(n,m):
 
 # main(recursion)--used to repeated n no.of times
 if __name__ == "__main__":
-    main()
+#     while True:
+#         if(choice  == 8):
+#             break
+#         else:
+            main()
