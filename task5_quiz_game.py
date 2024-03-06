@@ -17,7 +17,7 @@ print('''\tRULES :\n
     4. Consists of 5 Questions.
     5. Min.Marks to pass 15
     ''')
-
+# QUESTION 1
 print(''' 
 I/V) What type of software enables you to communicate with the computer and acts as a coordinator between the hardware and all systems that are runnning ? 
  
@@ -32,7 +32,7 @@ a1 = input("Select the Correct answer (if you want to don't answer , enter SPACE
 if(a1=="2"):
     score = score+5
     print('''
-    Congratulations...!!!   Score = +5
+    Correct answer...!!!   Score = +5
     ''')
 elif(a1==" "):
     score = score-1
@@ -45,7 +45,7 @@ else:
     Wrong answer..!!!  Score = -3
     ''')
 
-
+# QUESTION 2
 print(''' 
 II/V) What type of storage does a computer use when a user enters data into an online form and before they submit the form ?
  
@@ -60,7 +60,7 @@ a1 = input("Select the Correct answer (if you want to don't answer , enter SPACE
 if(a1=="3"):
     score = score+5
     print('''
-    Congratulations...!!!   Score = +5
+    Correct answer...!!!   Score = +5
     ''')
 elif(a1==" "):
     score = score-1
@@ -73,7 +73,7 @@ else:
     Wrong answer..!!!  Score = -3
     ''')
 
-
+# QUESTION 3
 print(''' 
 III/V) A computer must translate the data it recieves from the input devices into 0's and 1's so that it can either store or process the data. What is this system of 0's and 1's called ? 
  
@@ -101,11 +101,67 @@ else:
     Wrong answer..!!!  Score = -3
     ''')
 
+# QUESTION 4
+print(''' 
+IV/V) Thanks to advances in internet technology,web developers csn now create programs that are hybrid between a software program and a web page. What is this called ? 
+ 
+     1 . Web sites
+     2 . Web applications
+     3 . Web pages
+     4 . Web browsers
+     ''')
+
+a1 = input("Select the Correct answer (if you want to don't answer , enter SPACE bar): ")
+
+if(a1=="2"):
+    score = score+5
+    print('''
+    Correct answer...!!!   Score = +5
+    ''')
+elif(a1==" "):
+    score = score-1
+    print('''
+    You have not answered...!!!  Score = -1
+    ''')
+else:
+    score= score-3
+    print('''
+    Wrong answer..!!!  Score = -3
+    ''')
+
+# QUESTION 5
+print(''' 
+V/V) Which language is used to style a HTML file ? 
+ 
+     1 . React
+     2 . Java Script
+     3 . Java
+     4 . CSS
+     ''')
+
+a1 = input("Select the Correct answer (if you want to don't answer , enter SPACE bar): ")
+
+if(a1=="4"):
+    score = score+5
+    print('''
+    Correct answer...!!!   Score = +5
+    ''')
+elif(a1==" "):
+    score = score-1
+    print('''
+    You have not answered...!!!  Score = -1
+    ''')
+else:
+    score= score-3
+    print('''
+    Wrong answer..!!!  Score = -3
+    ''')
+
 
     # prints your final answer
 print("\n\t\tYOUR SCORE = ",score)
-
-if(score == 15 ):
+# prints wheather you are passed or failed
+if(score >= 15 ):
     print("\t\t\n CONGRATULATIONS......YOU HAVE PASSED THE TEST\n")
 else :
     print("\t\t\n BETTER LUCK NEXT TIME......YOU HAVE FAILED THE TEST\n")
