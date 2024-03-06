@@ -18,7 +18,8 @@ def main():
         5. Min.Marks to pass 15
         ''')
     # QUESTION 1
-    print(''' 
+    print(''' QUESTIONS LOADING..... >>>>>>
+
     I/V) What type of software enables you to communicate with the computer and acts as a coordinator between the hardware and all systems that are runnning ? 
     
         1 . Web application
@@ -109,12 +110,13 @@ def calculate(c_ans,u_ans,score):
         score = score-1
         print('''
         You have not answered...!!!  Score = -1
-        ''')
+        Correct answer is : ,
+        ''',c_ans)
     else:
         score= score-3
         print('''
         Wrong answer..!!!  Score = -3
-        ''')
+        Correct answer is :''',c_ans)
     return score
 
 
