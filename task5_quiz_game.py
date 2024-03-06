@@ -6,7 +6,6 @@
 # Discription :
 # this command appplication simulation of a quiz game
 # user has to select the correct answer for the question displayed out there
-<<<<<<< HEAD
 def main():
     score = 0
     print("\n\n\t\t\tby @JATOTH ADITHYA NAIK")
@@ -30,15 +29,6 @@ def main():
     a1 = user()
     score = calculate(2,a1,score)
    
-=======
-# RULES :\n
-#     1. For Every Correct Answer Score Increases by +5.
-#     2. For Every Wrong Answer Score Decreases By -3.
-#     3. For not answering score decreases by -1.
-#     4. Consists of 5 Questions.
-#     5. Min.Marks to pass 15
->>>>>>> e6ca266bdd81caa1a19e863216e7fa0d60737ac3
-
     # QUESTION 2
     print(''' 
     II/V) What type of storage does a computer use when a user enters data into an online form and before they submit the form ?
@@ -101,11 +91,13 @@ def main():
         print("\n\t\t ******* BETTER LUCK NEXT TIME......YOU HAVE FAILED THE TEST ********\n")
     print("\n****************************************************************************************************")
     # asking user for wheather he wants to play the game again
-    choice = input("\n\n\t\tWant to play AGAIN ....?!,please enter PLAY   :  ")
+    choice = input('''\n\n\t\t  Want to play AGAIN ----> enter (YES / NO)  :  ''')
     choice = choice.lower()
     print("\n****************************************************************************************************\n")
-    if(choice == "play"):
+    if(choice == "yes"):
         main()
+    else:
+        print("\t\tTHANKS FOR TAKING THE QUIZ")
 
 def calculate(c_ans,u_ans,score):
     if(c_ans == u_ans):
