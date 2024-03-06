@@ -98,7 +98,7 @@ def main():
     if(choice == "yes"):
         main()
     else:
-        print("\t\tTHANKS FOR TAKING THE QUIZ")
+        print("\t\tTHANKS FOR TAKING THE QUIZ\n\n")
 
 def calculate(c_ans,u_ans,score):
     if(c_ans == u_ans):
@@ -110,13 +110,12 @@ def calculate(c_ans,u_ans,score):
         score = score-1
         print('''
         You have not answered...!!!  Score = -1
+        \n
         Correct answer is : ,
-        ''',c_ans)
+        ''',c_ans,)
     else:
         score= score-3
-        print('''
-        Wrong answer..!!!  Score = -3
-        Correct answer is :''',c_ans)
+        print("\n\t\tWrong answer..!!!  Score = -3\n\n\t\tCorrect answer is :",c_ans)
     return score
 
 
