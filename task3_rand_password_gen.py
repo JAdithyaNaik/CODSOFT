@@ -18,7 +18,15 @@ def main():
     username = input("\tEnter the user name : ")
     length = inp()
     while True:
-        gen(length,password)
+        if length.isdigit():
+            if length == "0":
+                print("\n\t\tInvalid size\n")
+                exit()
+            gen(length,password)
+            # exit()
+        else:
+            print("\n\t\tInvalid size\n")
+            exit()
         choice = rep()
         if(choice == "1"):
             break
@@ -36,14 +44,14 @@ def main():
 
 def gen(length,password):
     all_chars = string.ascii_letters + string.digits + string.punctuation
-    for i in range(length):
+    for i in range(int(length)):
         password+=random.choice(all_chars)
     print("\n\tGenerated password : " ,password+"\n")
 
 
 
 def inp():
-    return int(input("\n\tEnter the length of the password : "))
+    return input("\n\tEnter the length of the password : ")
 
 
 
