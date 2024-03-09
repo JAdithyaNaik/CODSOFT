@@ -13,7 +13,7 @@ tasks = []
 def main():
     print("\n\n\t\t\tby @JATOTH ADITHYA NAIK")
     print("________________________________________")
-    print("\n\t\t\t***TO DO LIST APP***\n")
+    print("\n\t\t\t***TO DO LIST APP***\n") 
     while True :
         print("1.ADD")
         print("2.DELETE")
