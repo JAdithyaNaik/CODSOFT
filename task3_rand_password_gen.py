@@ -26,10 +26,13 @@ def main():
             gen(length,password)
             rep()
         elif(choice == "3"):
+            print("\n\t\tTHANKS FOR USING....\n")
             exit()
         else:
             print("\n\tInvalid choice\n")
+            break
 
+    print("\n\t\tTHANKS FOR USING....\n")
 
 def gen(length,password):
     all_chars = string.ascii_letters + string.digits + string.punctuation
