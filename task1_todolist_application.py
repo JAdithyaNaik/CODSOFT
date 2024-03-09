@@ -18,7 +18,8 @@ def main():
         print("1.ADD")
         print("2.DELETE")
         print("3.VIEW")
-        print("4.EXIT")
+        print("4.UPDATE")
+        print("5.EXIT")
         choice=int(input("Enter your choice : "))
         print("\n")
         if(choice == 1):
@@ -37,18 +38,31 @@ def main():
         elif(choice == 3):
             show()
         elif(choice == 4):
+            print("YOUR TO DO TASKS : ")
+            for i in range(len(tasks)):
+                print(f"{i+1}."+tasks[i])
+            print("NOTE THAT INDEXING STARTS FROM '1' ONLY")
+            index = int(input("Enter the index of the Task that you wanna update :"))            
+            update(index)
+        elif(choice == 5):
             print("Saving & Exiting ......\n")
             break;
         else:
             print("Enter valid input , please try again..\n")
 
-# defining the functions i have called
+# defining the functions i have used
 # add() method
 def add(new_item):
     tasks.append(new_item)
     print("Added Task Successfully!!\n")
     print("________________________________________")
-
+# update() method
+def update(ind):
+    tasks.pop(ind-1)
+    upd_task=input("Enter your new task : ")
+    tasks.insert(ind-1,upd_task)
+    print("Updated Task Successfully!!\n")
+    print("________________________________________")
 # show() method
 def show():
     if(len(tasks)==0):
@@ -56,7 +70,8 @@ def show():
     else:
         print("YOUR TASKS:")
         for i in range(len(tasks)):
-            print(f"{i+1}."+tasks[i])
+            print(i+1,end=".")
+            print(tasks[i])
         print("Shown your Tasks Succesfully!!\n")
     print("________________________________________") 
 
