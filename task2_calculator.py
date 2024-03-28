@@ -111,10 +111,7 @@ def power(n,m):
     print(f"\n{n} to the Power of {m} is : {result}")
     print("________________________________________")
 
-
-
-
-# main(recursion)--used to repeated n no.of times
+# main function
 if __name__ == "__main__":
         main()
         print("\n\t\tThanks for using..........\n")

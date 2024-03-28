@@ -111,14 +111,7 @@ def update(ind):
     tasks.insert(ind-1,upd_task)
     print("Updated Task Successfully!!\n")
     print("________________________________________")
-    
 
-
-
-
-
-
-
-# main(recursion)--used to repeated n no.of times
+# main function
 if __name__ == "__main__":
     main()

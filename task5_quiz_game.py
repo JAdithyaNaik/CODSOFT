@@ -7,9 +7,11 @@
 # this command appplication simulation of a quiz game
 # user has to select the correct answer for the question displayed out there
 def main():
+    # initial score set to 0
     score = 0
     print("\n\n\t\t\tby @JATOTH ADITHYA NAIK")
     print("\n\t\t\t *** QUIZ GAME ***\n")
+    # displaying the rules of the quiz
     print('''\tRULES :\n
         1. For Every Correct Answer Score Increases by +5.
         2. For Every Wrong Answer Score Decreases By -3.
@@ -28,7 +30,7 @@ def main():
         4 . Web browser
         ''')
     a1 = user()
-    score = calculate(2,a1,score)
+    score = calculate("2",a1,score)
    
     # QUESTION 2
     print(''' 
@@ -40,7 +42,7 @@ def main():
         4 . Processing storage
         ''')
     a2 = user()
-    score = calculate(3,a2,score)
+    score = calculate("3",a2,score)
    
 
     # QUESTION 3
@@ -53,7 +55,7 @@ def main():
         4 . Input and output system
         ''')
     a3 = user()
-    score = calculate(1,a3,score)
+    score = calculate("1",a3,score)
     
 
     # QUESTION 4
@@ -66,7 +68,7 @@ def main():
         4 . Web browsers
         ''')
     a4 =user()
-    score = calculate(2,a4,score)
+    score = calculate("2",a4,score)
     
 
     # QUESTION 5
@@ -79,7 +81,7 @@ def main():
         4 . CSS
         ''')
     a5 = user()
-    score = calculate(4,a5,score)
+    score = calculate("4",a5,score)
    
 
 
@@ -99,7 +101,7 @@ def main():
         main()
     else:
         print("\t\tTHANKS FOR TAKING THE QUIZ\n\n")
-
+# calculates the marks,by checking it wheather it is correct or not
 def calculate(c_ans,u_ans,score):
     if(c_ans == u_ans):
         score = score+5
@@ -118,9 +120,11 @@ def calculate(c_ans,u_ans,score):
         print("\n\t\tWrong answer..!!!  Score = -3\n\n\t\tCorrect answer is :",c_ans)
     return score
 
-
+# function for taking input frpom the user
 def user():
-    a = int(input("Select the Correct answer (if you want to don't answer , enter SPACE bar): "))
+    a = input("Select the Correct answer (if you want to don't answer , enter SPACE bar): ")
     return a
+
+# main function
 if __name__ =="__main__" :
     main()

@@ -65,5 +65,5 @@ def rep():
     print("""\t1.ACCEPT\n\t2.REGENERATE\n\t3.EXIT""")
     return input("\n\tEnter your choice : ")
 
-
+# main function
 main()
