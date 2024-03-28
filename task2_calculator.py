@@ -14,6 +14,7 @@ def main():
         print("________________________________________")
         print("\n\t\t\t***CALCULATOR APP***\n")
         while True :
+            # choices for user
             print("1.ADDITION")
             print("2.SUBTRACTION")
             print("3.MULTIPLICATION")
@@ -22,14 +23,18 @@ def main():
             print("6.FLLOR DIVISION")
             print("7.POWER")
             print("8.EXIT")
+            # taking input from the user
             choice =int(input("\nEnter your Choice : "))
+            # for exiting 
             if(choice == 8):
+                print("\n\n")
                 break
+            # for checking out of range choices
             elif(choice>8):
                 print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
             else:
-                a = int(input("\nEnter the first Number : "))
-                b = int(input("Enter the Second Number : "))
+                a = float(input("\nEnter the first Number : "))
+                b = float(input("Enter the Second Number : "))
 
                 if(choice == 1):
                     add(a,b)
@@ -50,9 +55,11 @@ def main():
                     break;
                 else:
                     print("\nINVALID CHOICE , PLEASE TRY AGAIN LATER\n")
+            
 
+# defining the functions I have called
+#  All methods takes 2 numbers as arguments and prints the result accounding to the choice choosen
 
-# defining the functions i have called
 # add() method
 def add(n,m):
     result = n+m
@@ -110,3 +117,4 @@ def power(n,m):
 # main(recursion)--used to repeated n no.of times
 if __name__ == "__main__":
         main()
+        print("\n\t\tThanks for using..........\n")
