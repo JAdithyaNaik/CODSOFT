@@ -22,6 +22,7 @@ The **To-Do List Application** enables users to manage and organize their tasks 
 
 
 
+
 # Simple Calculator - TASK 2
 
 The **Simple Calculator**  performs basic arithmetic operations. Users can input two numbers and choose an operation (addition, subtraction, multiplication, division, modulus, floor division or power). Here's how it works:
